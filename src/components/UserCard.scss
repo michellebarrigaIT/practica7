@@ -1,0 +1,15 @@
+$button-color: #AE71C4;
+$button-color-hover: darken($button-color, 10%);
+
+.user-card {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    background-color: $button-color;
+
+    &:hover:not(:disabled) {
+        background-color: $button-color-hover;
+    }
+}
