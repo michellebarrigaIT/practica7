@@ -1,0 +1,27 @@
+$button-color: #AE71C4;
+$button-color-hover: darken($button-color, 10%);
+
+.container {
+  text-align: center;
+  margin-top: 2rem;
+
+    button {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        background-color: $button-color;
+        color: white;
+        transition: background-color 0.3s;
+    
+        &:hover:not(:disabled) {
+            background-color: $button-color-hover;
+        }
+    
+        &:disabled {
+            background-color: #cccccce5;
+            cursor: not-allowed;
+        }
+    }
+}
